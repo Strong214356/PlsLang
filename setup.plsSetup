@@ -1,0 +1,5 @@
+{main.plsFile :: compiled}
+{start :: ["Hello World!"]}
+{modules [
+	{none},
+]}

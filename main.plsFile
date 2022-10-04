@@ -1,0 +1,25 @@
+function [setup] |2|
+begin:
+    ~set #1 = #2,
+    ~set §return§ = NULL,
+end.
+
+~create _str1 = none,
+
+{[( ce programe demande un mot de passe et verifie si il est correct )]}
+
+function [start] |1|
+begin:
+    ~set §streamOut§ = §stdout§,
+    ~set §streamIn§ = §stdin§,
+    ~set §out§ = "give me your password : ",
+    ~create _pass = §in§,
+    `setup`{_str1:#1},
+    (equ) |#2:_pass| ? \testPassed/,
+    ~set §out§ = "Wrong password!",
+    ~set §return§ = §EXIT_FAILED§,
+end.
+    \testPassed/,
+    ~set §out§ = `cat`{"Good Password", {c}10, "the password was : ", _str1},
+    ~set §return§ = §EXIT_SUCCESS§,
+end.
