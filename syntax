@@ -13,6 +13,7 @@ setup syntax :
     {none},
     {graphics},
 ]} (use none if you don't want to use modules)
+{outputFileName} (set the output file compiled mode only)
 
 
 function :
