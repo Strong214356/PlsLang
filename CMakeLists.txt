@@ -3,4 +3,4 @@ project(pls_Language)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(plsc main.cpp)
+add_executable(plsc main.cpp utils/parser/Parser.cpp)
