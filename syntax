@@ -25,6 +25,7 @@ end.
 (to make function)
 `name`{arg1:arg2} (to call function)
 #x (for arguments)
+(if function are not definne a the very beggining of the file, it will throw an error)
 
 langFunction :
 `exec`{str} (execute the code into str (like eval in js) available only with interpreted version)
